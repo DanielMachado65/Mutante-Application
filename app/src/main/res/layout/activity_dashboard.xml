@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dashboard">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Mutant"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="30sp"
+        android:typeface="monospace" />
+
+    <ListView
+        android:id="@+id/listViewMutant"
+        android:layout_width="wrap_content"
+        android:layout_height="514dp"
+        android:layout_below="@+id/searchEditText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="56dp" />
+
+    <Button
+        android:id="@+id/btnCreateMutant"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:onClick="createMutant"
+        android:text="Create Mutant" />
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCreateMutant"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Pesquisar por habilidade"
+        android:inputType="textPersonName" />
+</RelativeLayout>
