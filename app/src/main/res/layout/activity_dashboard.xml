@@ -39,13 +39,13 @@
 
     <Button
         android:id="@+id/btnCreateMutant"
-        android:layout_width="142dp"
+        android:layout_width="92dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="111dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="92dp"
         android:layout_marginBottom="8dp"
-        android:layout_toEndOf="@+id/textView3"
         android:onClick="createMutant"
         android:text="Create Mutant" />
 
@@ -62,4 +62,13 @@
         android:ems="10"
         android:hint="Pesquisar por habilidade"
         android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:onClick="exitApp"
+        android:text="Sair" />
 </RelativeLayout>
